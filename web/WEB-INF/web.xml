@@ -7,12 +7,12 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>login</servlet-class>
+        <servlet-class>fenn.login</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>NewCustomerServlet</servlet-name>
-        <servlet-class>signup</servlet-class>
+        <servlet-class>fenn.newcustomer</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -27,12 +27,12 @@
 	
 	<error-page>
     <error-code>404</error-code>
-    <location>/Error_404.js</location>
+    <location>/Error_404.jsp</location>
 	</error-page>
 	
 	<error-page>
     <exception-type>java.lang.Throwable</exception-type >
-    <location>/Error_java.js</location>
+    <location>/Error_java.jsp</location>
 	</error-page>
 
 </web-app>     
