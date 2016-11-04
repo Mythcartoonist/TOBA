@@ -7,12 +7,12 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>fenn.login</servlet-class>
+        <servlet-class>fenn.login.LoginServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>NewCustomerServlet</servlet-name>
-        <servlet-class>fenn.newcustomer</servlet-class>
+        <servlet-class>fenn.newcustomer.NewCustomerServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -34,5 +34,10 @@
     <exception-type>java.lang.Throwable</exception-type >
     <location>/Error_java.jsp</location>
 	</error-page>
+        
+        <welcome-file-list>
+            <welcome-file>index.html</welcome-file>
+            <welcome-file>index.jsp</welcome-file>
+        </welcome-file-list>
 
 </web-app>     
