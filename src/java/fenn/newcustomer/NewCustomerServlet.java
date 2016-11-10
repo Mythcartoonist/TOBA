@@ -11,7 +11,8 @@ public class NewCustomerServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
          
-		String url = "/new_customer.html";
+                HttpSession session = request.getSession();
+		String url = "/new_customer.jsp";
 		
 		String action = request.getParameter("action");
 		if ( action == null) {
@@ -19,7 +20,7 @@ public class NewCustomerServlet extends HttpServlet {
 		}
 		
 		if (action.equals("signup")) {
-			url = "/new_customer.html";
+			url = "/new_customer.jsp";
 		}
 		else if (action.equals("add")) {
 			String fname = request.getParameter("fname");
@@ -50,7 +51,7 @@ public class NewCustomerServlet extends HttpServlet {
                             message = null;
                             url = "/success.jsp";
                         }
-                        request.setAttribute("user", user);
+                        session.setAttribute("user", user);
                         request.setAttribute("message", message);
 		}   
         getServletContext()

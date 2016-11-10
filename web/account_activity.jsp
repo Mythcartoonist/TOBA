@@ -13,12 +13,12 @@
 	</ul> 
    </nav>
    <h2>Account Activity</h2>
-   <c:if test2="${fname != null}">
+   <c:if test="${username != null}">
    <p>Welcome!</p>
    <span>${user.fname} ${user.lname}</span>
    </c:if>
    
-   <c:if test2="${fname == null}">
+   <c:if test="${username == null}">
        <p>Not Logged In</p> 
    </c:if>
 </div>

@@ -14,6 +14,21 @@
         <servlet-name>NewCustomerServlet</servlet-name>
         <servlet-class>fenn.newcustomer.NewCustomerServlet</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>User</servlet-name>
+        <servlet-class>fenn.user.User</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>TransactionServlet</servlet-name>
+        <servlet-class>fenn.transaction.TransactionServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ResetServlet</servlet-name>
+        <servlet-class>fenn.reset.ResetServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -23,6 +38,11 @@
     <servlet-mapping>
         <servlet-name>NewCustomerServlet</servlet-name>
         <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ResetServlet</servlet-name>
+        <url-pattern>/reset</url-pattern>
     </servlet-mapping>
 	
 	<error-page>

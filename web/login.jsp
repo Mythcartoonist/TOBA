@@ -21,7 +21,7 @@
 	<input type="submit" value="Login"> <input type="reset">
 	</form>
 	<nav role="navigation">
-	<a href="new_customer.html">New Customer Sign Up</a> <a href="password_reset.html">Reset Password</a>
+	<a href="new_customer.html">New Customer Sign Up</a> <a href="password_reset.jsp">Reset Password</a>
 	</nav>
 </div>
 <c:import url="/includes/footer.jsp" />

@@ -12,10 +12,13 @@
      <li><a href="login.html">Login</a></li>
 	</ul> 
    </nav>
+    <c:if test="${message != null}">
+        <p><i>${message}</i></p>
+    </c:if>
    <form name="resetPassword" method="post" action="reset">
 	<input type="hidden" name="action" value="add">
 	<fieldset><legend>Reset Password</legend>
-	<label>Password Reset: <input type="password" name="user" id="user" required></label><br><br>
+	<label>Password Reset: <input type="password" name="rpass" id="rpass" required></label><br><br>
 	</fieldset>
 	<input type="submit" value="Reset Password">
 	</form>
